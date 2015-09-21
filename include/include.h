@@ -10,23 +10,24 @@
 #include <stdlib.h>
 #include <string.h>
 
-extern char ac_2[]="call \n";
-extern char ac_3[]="raise100 \n";
-extern char ac_4[]="all_in \n";
-extern char ac_5[]="fold \n";
-extern int steps=0;			/* Data_init */
-extern int ac=0; 
-extern int error=0;
-extern int money=0;
+extern char ac_2[];
+extern char ac_3[];
+extern char ac_4[];
+extern char ac_5[];
+extern int steps;			/* Data_init */
+extern int ac; 
+extern int error;
+extern int money;
+extern char my_id_s[10];
 
 extern char color[7][10];
 extern char point[7][10];
 extern char bet[7][10];
 extern int pointInt[7][1];
 extern int betInt[7];
-extern int betInt_max=0;
-extern int m=0;
-extern int member_count=0;
+extern int betInt_max;
+extern int m;
+extern int member_count;
 
 extern void Data_init();
 extern void bet_Data_init();

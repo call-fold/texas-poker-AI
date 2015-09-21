@@ -1,6 +1,7 @@
 #include "include.h"
 
 int m_socket_id = -1;
+char my_id_s[10]={'\0'};
 
 /* 处理server的消息 */
 int on_server_message(int length, const char* buffer)
@@ -23,7 +24,6 @@ int main(int argc, char *argv[])
   in_addr_t my_ip = inet_addr(argv[3]);
   in_port_t my_port = htons(atoi(argv[4])); 
   int my_id = atoi(argv[5]);
-  char my_id_s[10]={'\0'};
   sprintf(my_id_s,"%d",my_id);
 
   /* 创建socket */
